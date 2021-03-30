@@ -7,11 +7,7 @@ const drones=JSON.parse(localStorage.getItem('drones'))
 
 let params = (new URL(window.location)).searchParams;
 
-console.log(params);
-console.log(params.get('id'));
-
 const selectedDrone = drones.filter(drone=> drone.id===Number(params.get('id')));
-console.log(selectedDrone);
 
 let selectedDroneTemplate =
  `<p>${selectedDrone[0].name}</p>` +
@@ -27,8 +23,6 @@ fetch('./data/data.json')
     let drone = []
     drone = res['reports']        
     const filteredDrone = drone.filter(drone => drone.drone_id===Number(params.get('id')))
-
-    console.log(filteredDrone)
 
     filteredDrone.map(
         drone=> {
