@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body {
+    background-color:#F6F9FC;
+    position: relative;
+    min-height: 100vh;
+}
+
+header {
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    font-weight: bold;
+    padding-left: 2rem ;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width: 100%;
+    z-index: 2;
+}
+
+.wrapper {
+    padding:6rem 2rem 22rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 4rem;
+    justify-content: center;  
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 5px;
+    max-height: 400px;
+    box-shadow: 0px 7.89693px 10.5292px rgba(0, 0, 0, 0.04);
+    background-color: #FCFCFC
+}
+
+.cardImg {
+    border-radius : 5px  5px 0 0;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.cardDesc {
+    padding: 1.2rem;
+    font-weight: bold;
+}
+
+.cardDescRow {
+    display: flex;
+}
+
+.cardDescRow > * {
+    flex: 1 ;
+    text-align: start;
+    margin-bottom: 1rem;
+    font-size:12px;
+}
+
+.cardDescRow>p:first-child {
+    color:#6E7191;
+    text-transform: uppercase;
+}
+
+.cardDescRow:nth-child(1):nth-child(1) {
+    color:#6308F7;
+}
+
+button {
+    cursor: pointer;
+    background: white;
+    border-radius: 0.5rem;
+    color:#6308F7;
+    width: 100%;
+    padding:1rem;
+    border:0.2rem solid #6308F7;
+    font-size:13px;
+    font-weight:bold;
+}
+
+button:hover {
+    cursor: pointer;
+    background: #6308F7;
+    border-radius: 0.5rem;
+    color:white;
+    width: 100%;
+    padding:1rem;
+    border: 0.2rem solid transparent;
+}
+

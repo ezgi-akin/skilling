@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body {
+    background-color:#F6F9FC;
+    position: relative;
+    min-height: 100vh;
+    min-width:min-content ;
+}
+
+header {
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    font-weight: bold;
+    padding-left: 2rem ;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width: 100%;
+    z-index: 2;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    padding:6rem 2rem 22rem 2rem;
+    align-content : center;
+    background-color:#F6F9FC;
+    position: relative;
+}
+
+.drone {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+    background-color:#F6F9FC;
+}
+
+.drone p {
+    text-align: left;
+    width:6rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:#6308F7;
+    font-size: 20px;
+    line-height: 30px;
+    background-color:#F6F9FC;
+}
+
+img {
+    width: 5rem;
+    height: 3rem;
+    object-fit: cover;
+}
+
+.tableWrapper {
+    overflow-x:auto;
+    background-color: white;
+    max-width: 300px;
+    min-width: 100%;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing: 0;
+    box-shadow: 0px 7.89693px 10.5292px rgba(0, 0, 0, 0.04);
+    text-align: left;
+    background-color: white;
+    width: 100%;
+    font-size:12px;
+    font-weight: bold;
+}
+
+tr {
+    border-bottom: 1px solid lightgray;
+}
+
+th ,td {
+    padding: 1rem 2rem;
+}
+
+th {
+    padding: 1rem 2rem;
+    color:gray;
+} 
+
+tbody>tr:hover {
+    background-color:#f4f6fb ;
+}
+
+table p {
+    padding: 0.4rem;
+    text-align: center;
+    text-transform: lowercase;
+    font-weight: bold;
+    width: min-content;
+}
+
+.heavy {
+    color:#F03738;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #F03738;
+    border-radius: 4px;
+    border: 1px solid #F03738; 
+}
+
+.moderate {
+    color:#F3BB1C;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #F3BB1C;
+    border-radius: 4px;
+    border: 1px solid #F3BB1C; 
+}
+
+.light {
+    color:#3CC13B;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #3CC13B;
+    border-radius: 0.4rem;
+    border: 1px solid #3CC13B;
+}
